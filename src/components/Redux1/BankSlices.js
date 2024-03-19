@@ -2,9 +2,8 @@
 
 import {createSlice} from "@reduxjs/toolkit"
 
-
  const initialState={
-     amount: 0
+     amount: 10
  }
 
 const AmountSlice=createSlice({

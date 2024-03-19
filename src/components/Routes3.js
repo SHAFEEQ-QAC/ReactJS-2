@@ -32,11 +32,9 @@ import UserList from "./Routes2/UserList.js"
 import UserProfile from "./Routes2/UserProfile.js"
 
 const Routes3=()=>{
-
-
     return (
       <div className="App">
-      <h1> React Router V6 Example of Links </h1>
+      <h1> React Router  </h1>
 
 
       {/*  Links */}
@@ -46,17 +44,7 @@ const Routes3=()=>{
         <Links2/>
                 
         <Routes>
-            <Route path="/shafeeq" element={<h1>-- WELCOME to my World --</h1>}/>
-            <Route path="/shafeeq" element={
-
-                                                <>
-                                                    <h1> 2SHAFEEQ </h1>
-                                                    <h2> IS  </h2>
-                                                    <h3> Back </h3>
-                                                </>
-                                            }/>
-
-
+            <Route path="/" element={<h1>-- WELCOME to my World --</h1>}/>
             <Route path="/Home" element={<Home/>}/>
             <Route path="/About" element={<About/>}/>
             <Route path="/users" element={<UserList/>}/>

@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.layoutHeader {
+  height: 80px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.navbar .navbarLinks {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navbar .navbarLinks .navbarLink {
+  color: white;
+}
+
+.logo {
+  color: white;
+}
+
+.layoutBody {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.layoutSidebar {
+  width: 300px;
+  background: blue;
+  color: white;
+  height: 100%;
+}
+
+.sidebarLinks {
+  padding: 1rem;
+}
+
+.sidebarLinks .sidebarLinksList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+}
+
+.sidebar .sidebarLinksList .sidebarLink {
+  color: white;
+}
+
+.layoutContent {
+  flex: 1;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column
+}
+
+
+/* ///////////////////////////////////////// */
+
+.Mydiv {
+  align-self: left;
+  background-color: lightgrey;
+  width: 300px;
+  border: 5px solid green;
+  padding: 50px;
+  margin: 20px;
+}

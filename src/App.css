@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -32,12 +32,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,30 +47,26 @@ nav{
   background: #fcfcfc;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   padding: 0 20px;
 }
 
-nav ul li{
+nav ul li {
   display: inline;
-  padding:0 29px 
+  padding: 0 29px
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   font-size: 20px;
 }
 
-nav ul li a:hover{
-  color: red
-
-
-}
-
-nav ul li a.active{
-  font-weight:800;
+nav ul li a:hover {
   color: red
 }
 
-
+nav ul li a.active {
+  font-weight: 800;
+  color: red
+}

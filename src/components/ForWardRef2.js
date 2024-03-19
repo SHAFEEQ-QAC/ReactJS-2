@@ -4,7 +4,8 @@ import {useRef} from "react"
 
 /*
 
-Button is in the parent, but when clicked its executing the function from the child component
+Button is in the parent, but when clicked its executing the function 
+from the child component
 
 */
 
@@ -14,7 +15,6 @@ function ForWardRef2() {
     const handleButtonClick=()=>{
         if(childRef.current){
             childRef.current.handleButtonClick()
-
         }
     }
   return (
@@ -24,12 +24,6 @@ function ForWardRef2() {
     <button onClick={()=>handleButtonClick()}> Click Child Button from Parrent </button>
 
     <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    
-
     </div>
   );
 }

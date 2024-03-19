@@ -1,26 +1,19 @@
 
-import {useEffect} from "react"
+import {useEffect, useState} from "react"
 
 
   
-
+function useWhat(){
+  const [data,setData]=useState(12)
+  return "hello"+data
+}
 function Test() {
 
-
-    let balance=44
-    let notes=[ {"n50":0},{"n20":0},{"n10":0},{"n5":0},{"n2":0},{"n1":0}]
+    const abc=useWhat()
     
-    if(balance>=20){
-        notes[0].n20=parseInt(balance/20)
-    }
   return (
     <div className="App">
-       { notes.map((data) => {
-                return(
-                         {data}
-                )}
-       )
-                }
+      {abc}
         
     </div>
   );

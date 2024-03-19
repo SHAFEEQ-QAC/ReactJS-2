@@ -28,29 +28,25 @@ const Routes2=()=>{
 
     return (
       <div className="App">
-      <h1> React Router V6 Example of Links </h1>
+      <h1> React Router Links </h1>
 
 
       {/*  Links */}
 
      
       <BrowserRouter>
-                <Links1/>
-                <nav>
+                {/* <Links1/> */}
+               
                     <ul>
                     <li> <Link to="/"> / </Link> </li>
                     <li> <Link to="/shafeeq"> Shafeeq </Link> </li>
                     <li> <Link to="/home"> Home  </Link> </li>
                     <li> <Link to="/about"> About  </Link> </li>
-                    
 
-                    
-                    
-                        
                     </ul>
-                </nav>
+               
       <Routes>
-            <Route path="/shafeeq" element={<h1>-- WELCOME to my World --</h1>}/>
+            <Route path="/" element={<h1>-- WELCOME to my World --</h1>}/>
             <Route path="/shafeeq" element={
 
                                                 <>

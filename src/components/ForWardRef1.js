@@ -4,10 +4,9 @@ import {useRef} from "react"
 
 /*
 
-forwardRef is a special function in react that allow you to forward a ref from a parent component 
-to a chile component.
-it is primarily used when you need to access the DOM element or component instant of the child component 
-from its parent
+forwardRef is a special function in react that allow you to forward a ref from a parent 
+component to a chile component. it is primarily used when you need to access 
+the DOM element or component instant of the child component from its parent
 
 
 forwardRef

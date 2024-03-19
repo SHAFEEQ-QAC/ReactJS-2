@@ -10,7 +10,7 @@ be passed through the component tree without having to pass props down manually 
 
 */
 
-import UseContextChild1 from "./useContext/UseContextChild1.js"
+import UseContextChild1 from "./useContext3/UseContextChild1.js"
 
 function UseContext1() {
 
@@ -22,6 +22,7 @@ function UseContext1() {
     </div>
   );
 }
+
 
 export default UseContext1;
 

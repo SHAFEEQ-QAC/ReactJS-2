@@ -61,22 +61,20 @@ const Routes1=()=>{
 
     return (
       <div className="App">
-      <h1> React Router V6 </h1>
+      <h1> React Router </h1>
 
 
       {/*  Navigation */}
       <BrowserRouter>
       <Routes>
-            <Route path="/shafeeq" element={<h1> WELCOME to my World </h1>}/>
+            <Route path="/" element={<h1> WElcome to home PAge </h1>}/>
             <Route path="/shafeeq" element={
-
                                                 <>
                                                     <h1> SHAFEEQ </h1>
                                                     <h2> IS  </h2>
                                                     <h3> Back </h3>
                                                 </>
                                             }/>
-
 
             <Route path="/Home" element={<Home/>}/>
             <Route path="/About" element={<About/>}/>

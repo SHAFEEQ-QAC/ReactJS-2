@@ -6,9 +6,8 @@ function UseContextChild1() {
   let {shareData1,setShareData1}= useContext(MyContext1)
   let {shareData2,setShareData2}= useContext(MyContext2)
   
-  //setShareData1("James Bond")
   
-
+  //const [shareData1,setShareData1]=useState(" SHAFEEQ is Back")
   return (
     <div className="App">
         <h1> UseContext Child-1 </h1>

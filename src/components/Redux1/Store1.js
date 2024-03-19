@@ -4,7 +4,6 @@ to create a store configureStore() is used
 
 
 */
-
 import AmountSlice from "./BankSlices.js"
 import {configureStore} from "@reduxjs/toolkit"
 

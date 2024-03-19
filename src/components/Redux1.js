@@ -22,16 +22,18 @@ to create a store configureStore() is used
 
 
 */
-
 import {useSelector,useDispatch} from "react-redux"
 import {deposite,withdraw} from "./Redux1/BankSlices.js"
 
 const Redux1=()=>{  
 
-    const { amount } = useSelector( (state)=> state.bank )
+    const amount = useSelector( (state)=> state.bank.amount )
+    console.log(amount)
     const dispatch = useDispatch()
     return(
         <>
+        <h2> Redux Example</h2>
+            <br/>
             Current Balance is : {amount}
             <br/>
             <br/>
@@ -39,7 +41,7 @@ const Redux1=()=>{
             <br/>
             <button onClick={()=>dispatch(withdraw())}> Amount With Draw </button>
             <br/>
-            <button > Show Balance </button>
+           
         </>
     )
 }

@@ -10,11 +10,22 @@ Don’t call Hooks from regular JavaScript functions
 
 */
 
-const useCounter=()=>{
+import {useState} from "react"
 
-return(
+const UseCounter=(initValue=1,step=1)=>{
+    
+    const [count,setCounter] = useState(initValue)
 
-)
+    const increment=()=>{
+        setCounter(count+step)
+    }
+    
+    const decrement=()=>{
+        setCounter(count-step)
+    }
+    
+    return {count,increment,decrement}
 }
 
-export default useCounter;
+export default UseCounter;
+
